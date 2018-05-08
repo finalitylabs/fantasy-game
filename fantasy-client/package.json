@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/lodash": "^4.14.108",
+    "lodash": "^4.17.10",
     "mobx": "^4.2.1",
     "mobx-react": "^5.1.2",
     "mobx-state-tree": "^2.0.4",
+    "moment": "^2.22.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts-ts": "2.15.1"
