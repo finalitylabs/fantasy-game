@@ -1,0 +1,24 @@
+{
+  "name": "fantasy-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --inline --progress --config config/webpack.config.js",
+    "build": "webpack --config config/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finalitylabs/fantasy-game.git"
+  },
+  "author": "finalitylabs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finalitylabs/fantasy-game/issues"
+  },
+  "homepage": "https://github.com/finalitylabs/fantasy-game#readme",
+  "dependencies": {},
+  "devDependencies": {
+  }
+}
