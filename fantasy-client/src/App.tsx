@@ -6,9 +6,9 @@ import { observer } from 'mobx-react';
 
 @observer
 class App extends React.Component<{store: typeof Store.Todos.Type}> {
-  todoInput: HTMLInputElement;
+  private todoInput: HTMLInputElement;
 
-  addTodo(e: React.SyntheticEvent<HTMLButtonElement>) {
+  public addTodo(e: React.SyntheticEvent<HTMLButtonElement>) {
     e.preventDefault();
     if(this.todoInput.value !== '') {
       this.props.store.add({ text: this.todoInput.value });
@@ -19,16 +19,16 @@ class App extends React.Component<{store: typeof Store.Todos.Type}> {
     }
   }
 
-  removeTodo(e: React.SyntheticEvent<HTMLButtonElement>, todo: typeof Store.Todo.Type) {
+  public removeTodo(e: React.SyntheticEvent<HTMLButtonElement>, todo: typeof Store.Todo.Type) {
     e.preventDefault();
     this.props.store.remove(todo);
   }
 
-  render() {
+  public render() {
     return <div>
       <form>
         <input ref={(r) => { if(r) this.todoInput = r; }} type="text" placeholder="Add entry" />
-        <button type="submit" onClick={(e) => this.addTodo(e)}>Add todo</button>
+        <button type="submit" onClick={this.addTodo.bind(this)}>Add todo</button>
       </form>
 
       <ul>
