@@ -1,11 +1,10 @@
-# getting started
+# game client
 
-### game client
+### getting started
 
 *To start the development server:*
 
 ```
-cd fantasy-client
 npm i
 npm start
 ```
@@ -13,7 +12,6 @@ npm start
 *To create a production bundle in the ./build folder:*
 
 ```
-cd fantasy-client
 npm i
 npm run build
 ```
