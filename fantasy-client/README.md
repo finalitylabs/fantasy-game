@@ -2,7 +2,7 @@
 
 ### getting started
 
-*To start the development server:*
+_To start the development server:_
 
 First change directory into the `/fantasy-client` directory.
 
@@ -19,3 +19,7 @@ npm start
 npm i
 npm run build
 ```
+
+## Linting and Formatting
+
+The project uses `tslint` and `prettier` for formatting client typescript. If you use VSCode, you can use the `prettier code formatter` plugin and add to your config `"editor.formatOnSave": true`.
