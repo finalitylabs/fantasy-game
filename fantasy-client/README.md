@@ -4,6 +4,8 @@
 
 *To start the development server:*
 
+First change directory into the `fantasy-client` directory.
+
 ```
 npm i
 npm start
