@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "build/dist",
+    "baseUrl": ".",
     "module": "esnext",
     "target": "es5",
     "lib": ["es6", "dom", "es2017"],
@@ -18,8 +19,17 @@
     "noUnusedLocals": true,
     "experimentalDecorators": true
   },
+  "include": [
+    "build/wrappers/*.ts",
+    "node_modules_ignore/**/*/index.d.ts",
+    "src/globals.d.ts",
+    "src/**/*.ts",
+    "migrations/**/*.ts",
+    "test/**/*.ts",
+    "types/**/*.d.ts"
+  ],
   "exclude": [
-    "node_modules",
+    "node_modules/@types/node/index.d.ts",
     "build",
     "scripts",
     "acceptance-tests",

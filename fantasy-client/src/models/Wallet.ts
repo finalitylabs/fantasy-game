@@ -1,4 +1,8 @@
 import { flow, types } from "mobx-state-tree";
+import Layer2lib from "js-layer2lib";
+console.log(Layer2lib);
+type L2 = Layer2lib;
+const l2: L2 = new Layer2lib("http://127.0.0.1:8545");
 
 const Transation = types.model({
   from_id: types.string,
@@ -26,9 +30,8 @@ const Wallet = types
 
       getBalance: flow(function* getBalance() {
         // aysnc test using FLOW and a generator for an operation
-        const r = yield fetch("https://api.github.com");
-        const b = yield r.json();
-        self.balance = String(b.current_user_url).charCodeAt(1);
+        const bal: string = yield l2.getMainnetBalance("0x7ea92dBce5387f8fF480Fe5D557aBd4C7B09054f");
+        self.balance = Number.parseFloat(bal);
       })
     };
   });

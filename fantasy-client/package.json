@@ -2,12 +2,14 @@
   "name": "fantasy-client",
   "version": "0.1.0",
   "private": true,
+  "types": "index.d.ts",
   "dependencies": {
     "@types/lodash": "^4.14.108",
+    "js-layer2lib": "github:layer2lib/js-layer2lib#master",
     "lodash": "^4.17.10",
     "mobx": "^4.2.1",
     "mobx-react": "^5.1.2",
-    "mobx-state-tree": "^2.0.4",
+    "mobx-state-tree": "^2.0.5",
     "moment": "^2.22.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -20,8 +22,9 @@
     "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
+    "@machinomy/types-web3": "0.0.7",
+    "@types/babel-core": "^6.25.3",
     "@types/jest": "^22.2.3",
-    "@types/node": "^10.0.6",
     "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
     "tslint-config-prettier": "^1.12.0",
